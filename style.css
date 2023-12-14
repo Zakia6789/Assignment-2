@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;800&family=Roboto:wght@400;500&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+/* navbar section started */
+#navbarSection{
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#navbarMenu{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+#navbarMenu>ul{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    font-weight: 600;
+}
+#navbarMenu>ul>li{
+    list-style: none;
+    font-weight: 600;
+}
+#navbarMenu>button,#bannerTextDiv>button{
+    background-color: #DD0000;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 25px;
+    display: flex;
+    align-items: center;
+}
+/* navbar Section ENDed */
+
+/* banner Section Start */
+#bannerSection{
+    background-color: #161616;
+    color: #FFFFFF;
+    display: grid;
+    gap: 100px;
+    justify-content: space-between;
+    align-items: center;
+   grid-template-columns: repeat(2,1fr);
+    margin: 20px 50px;
+    padding: 50px 50px 0px 50px;
+    border-radius: 15px;
+}
+
+#bannerTextDiv h1{
+    font-size: 50px;
+    font-weight: 800;
+    line-height: 50px;
+}
+#bannerImageDiv{
+margin: auto;
+}
+#bannerImageDiv>img{
+   height: 500px;
+    }
+/* bannerSectionEnded */
+
+/* match time table section start  */
+#matchSection{
+    padding: 20px 50px;
+    display: grid;
+    grid-template-columns: 25% 75%;
+    justify-content: space-between;
+    align-items: start;
+    gap: 25px;
+}
+#buttonGroup{
+ display: flex;
+ flex-direction: column;
+ background-color: black;
+ padding: 30px;
+ border-radius: 10px;
+ border: none;
+ gap: 20px;
+}
+#buttonGroup>button{
+    background-color: white;
+    color: #161616;
+    padding: 15px 30px;
+    border-radius: 10px;
+   border: 1px solid #E8E8E8;
+    font-size: 16px;
+    font-weight: 600;
+}
+#buttonGroup>#redbtn{
+    background-color: #DD0000;
+    color: #FFFFFF;
+}
+#allMatches{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    row-gap: 20px;
+
+}
+.matchCard{
+    border: 1px solid gray;
+    border-radius: 10px;
+    width: 270px;
+}
+.matchBanner img{
+    width: 100%;
+}
+.matchInfo{
+padding: 20px;
+}
+.matchInfo button{
+padding: 8px 20px;
+border: 1px solid #161616;
+border-radius: 5px;
+}
+.matchIcon{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+.time,.comment{
+    display: flex;
+    gap:10px ;
+    align-items: center;
+}
+/* match time table section  end  */
+/* sportSectionStart */
+#sportSection{
+    padding: 20px  50px 20px 60px;
+    background-color: #e9e7e7;
+}
+
+#sportMainDiv{
+    display: grid;
+    gap: 50px;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: space-between;
+    
+}
+.sportImage img{
+height: 400px;
+width: 600px;
+}
+.sportInfo h2,p{
+font-weight: bold;
+text-align: center;
+}
+/* sportSectionEND */
+
+/* footter section start */
+
+#footterSection{
+    margin: 20px 30px;
+    padding: 25px 50px ;
+    border: none;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #161616;
+    color: #FFFFFF;
+}
+#footterMenu{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+#footterMenu ul{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+li{
+    list-style: none;
+    font-weight: 600;
+}
+/* footter section end  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive Design */
+@media screen and (max-width:576px){
+    #navbarSection{
+        padding: 10px 30px;
+        flex-direction: column;
+         justify-content: center;
+       }
+    #navbarMenu{
+      flex-direction: column;
+          gap:10px;
+    }
+    #navbarMenu>ul{
+        gap: 30px;
+       }
+    #navbarMenu>button{
+       
+        padding: 10px 20px;
+        
+    }
+    /* navbar Section End */
+    /* banner Section Start */
+
+    #bannerSection{
+        gap: 100px;
+        justify-content:center;
+       grid-template-columns: repeat(1,1fr);
+        margin: 10px 30px;
+        padding: 30px 30px 0px 30px;
+        border-radius: 15px;
+    }
+    #bannerTextDiv{
+        text-align: center;
+    }
+    #bannerTextDiv h1{
+        font-size: 20px;
+        line-height: 40px;
+    }
+    #bannerTextDiv>button{
+        margin: auto;
+    }
+    #bannerImageDiv{
+    margin: auto;
+    }
+    #bannerImageDiv>img{
+       height: 300px;
+        }
+
+ /* banner Section End */
+
+
+/* match time table section start  */
+#matchSection{
+    padding: 10px 30px;
+  gap: 15px;
+    grid-template-columns:repeat(1,1fr);
+   
+}
+#buttonGroup{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ background-color: #FFFFFF;
+ padding: 30px;
+ border-radius: 10px;
+ gap: 10px;
+}
+#buttonGroup>button{
+    background-color: #FFFFFF;
+    color: #161616;
+    border: 1px solid #E8E8E8;
+}
+
+#allMatches{
+    grid-template-columns: repeat(1,1fr);
+    row-gap: 20px;
+    justify-items: center;
+
+}
+.matchCard{
+    border: 1px solid gray;
+    width: 350px;
+}
+ /* match time table section end  */
+
+/* sport section  start*/
+#sportSection{
+    padding: 10px  40px 10px 50px;
+  
+}
+
+#sportMainDiv{
+
+    gap: 30px;
+    grid-template-columns: repeat(1,1fr);
+    justify-content:center;
+    
+}
+.sportImage img{
+height: 400px;
+width: 350px;
+justify-content: center;
+}
+.sportInfo h2,p{
+font-weight: bold;
+text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* sport section end  */
+
+/* footter section start */
+
+#footterSection{
+    padding: 10px 30px ;
+flex-direction: column;
+    align-items: center;
+    background-color: #161616;
+    color: #FFFFFF;
+}
+#footterMenu{
+    gap: 10px;
+    
+}
+#footterMenu ul{
+    display: flex;
+        flex-direction: column;
+
+    gap: 30px;
+}
+li{
+    list-style: none;
+    font-weight: 600;
+}
+/* footter section end  */
+}
